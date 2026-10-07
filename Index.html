@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kumaran S | Portfolio</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --accent: #38bdf8;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 0 10%;
+    }
+
+    header {
+      padding: 4rem 0 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: var(--accent);
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .bio {
+      max-width: 600px;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.7rem 1.5rem;
+      background-color: var(--accent);
+      color: var(--bg);
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    section {
+      margin: 3rem 0;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      border-bottom: 2px solid var(--card-bg);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--accent);
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    .skill-tag {
+      background-color: var(--card-bg);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      border: 1px solid #334155;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 1px solid #334155;
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .card-links a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 1rem;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 0;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      border-top: 1px solid var(--card-bg);
+    }
+
+    .social-links a {
+      color: var(--accent);
+      margin: 0 0.5rem;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Kumaran S</h1>
+    <p class="subtitle">Information Technology Student & Web Developer</p>
+    <p class="bio">Passionate about building full-stack web applications, automation projects, and microcontrollers interfaces.</p>
+    <a href="#contact" class="btn">Get In Touch</a>
+  </header>
+
+  <section id="skills">
+    <h2>Tech Skills</h2>
+    <div class="skills-grid">
+      <span class="skill-tag">HTML5 / CSS3</span>
+      <span class="skill-tag">JavaScript</span>
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">8086 / Microprocessors</span>
+      <span class="skill-tag">Git & GitHub</span>
+      <span class="skill-tag">REST APIs</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      
+      <div class="card">
+        <h3>Automated Timetable Generator</h3>
+        <p>A smart scheduling application built to auto-generate class timetables, optimizing teacher slots and workload distribution without subject overlaps.</p>
+        <div class="card-links">
+          <a href="#">GitHub Code</a>
+          <a href="#">Live Demo</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Biometric Door Access Control</h3>
+        <p>Hardware-software interface project utilizing 8086 Microprocessor and 8255 PPI connected to fingerprint sensors and relays for secure entry.</p>
+        <div class="card-links">
+          <a href="#">Documentation</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out for collaborations or project work!</p>
+    <br>
+    <div class="social-links">
+      <a href="mailto:your-email@gmail.com">Email</a> |
+      <a href="https://github.com" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Kumaran S. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
